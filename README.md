@@ -1,13 +1,4 @@
-# Sample Hardhat Project
+# Sample Bridge Contract
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a Hardhat Ignition module that deploys that contract.
-
-Try running some of the following tasks:
-
-```shell
-npx hardhat help
-npx hardhat test
-REPORT_GAS=true npx hardhat test
-npx hardhat node
-npx hardhat ignition deploy ./ignition/modules/Lock.ts
-```
+This project enables owner that can deploy bridge contract to Base Sepolia Chain and Holesky Chain.
+And users can send custom ERC20 token from one chain to other chain by interacting with bridge contract.
