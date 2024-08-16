@@ -12,7 +12,7 @@ async function main() {
     console.log(`Token contract is deployed. Token address: ${instanceUSDC.target}`)
 
     const instanceBridge = await ethers.getContractFactory('ProxyOFTWithFee');
-    const BridgeContract = await instanceBridge.deploy(TokenAddress, 8, "0x6EDCE65403992e310A62460808c4b910D972f10f"); // sepolia
+    const BridgeContract = await instanceBridge.deploy(TokenAddress, 8, "0x1a44076050125825900e736c501f859c50fE728c"); // mainnet
     // Waiting for the contract deployment to be confirmed on the blockchain.
     await BridgeContract.waitForDeployment()
 
